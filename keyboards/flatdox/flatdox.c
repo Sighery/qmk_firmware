@@ -67,6 +67,10 @@ out:
     return mcp23018_status;
 }
 
+extern inline void flatdox_right_led_1(bool on);
+extern inline void flatdox_right_led_2(bool on);
+extern inline void flatdox_right_led_3(bool on);
+
 void flatdox_blink_all_leds(void) {
     flatdox_right_led_1(true);
     _delay_ms(50);
